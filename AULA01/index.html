@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Boas vindas!</h1>
+        <p>Vamos personalizar sua saudação usando JavaScript.</p>
+        <div class="saudacao" id="mensagemSaudacao">Olá, visitante!</div>
+
+        <button onclick="mudarNome()">Personalizar saudação</button>
+    </div>
+
+    <script>
+        function mudarNome() { // função
+            let nome = "Fabiano"; // declaração de variável
+            nome = prompt("Qual é o seu nome?"); // reatribuição, para mudar o valor da variável (não precisa do let)
+            //prompt é uma função que exibe uma caixa de diálogo para o usuário inserir um valor
+            document.getElementById("mensagemSaudacao").textContent = "Olá, " + nome + "!"; // altera o texto da div
+        } // fim da função
+    </script>
+</body>
+</html>

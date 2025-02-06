@@ -1,0 +1,12 @@
+//arrays no javascript
+let frutas = [
+    "banana", // 0
+    "maça", // 1
+    "coco", // 2
+];
+
+alert(frutas);
+
+alert(frutas.indexOf('banana'))
+
+frutas.push("melancia") // push é um comando para adicionar mais um item na array
